@@ -11,6 +11,9 @@
     "deploy": "npm run build && rsync -az -e 'ssh' dist esso@svorstol.com:/home/esso/tacocalc"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
     "vue": "^2.1.0"
   },
   "devDependencies": {
@@ -26,6 +29,7 @@
     "connect-history-api-fallback": "^1.1.0",
     "css-loader": "^0.25.0",
     "eslint": "^3.7.1",
+    "eslint-auto-fix": "^1.0.0",
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-friendly-formatter": "^2.0.5",
     "eslint-import-resolver-webpack": "^0.6.0",

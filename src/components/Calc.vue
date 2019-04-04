@@ -39,6 +39,7 @@
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
                     <li> {{ Math.ceil((1/25) * numberOfPeople) }} glass jalapenos </li>
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
+                    <li> 1 stk. hemmelig ingrediens 😉</li>
                 </ul>
             </div>
         </div>

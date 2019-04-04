@@ -17,7 +17,7 @@
                     <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
                     <li> {{ setRes(Math.ceil((1/4) * numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
                     <li> {{ setRes(Math.ceil((2/5) * numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
-                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil((1/10) * numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
                     <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
                     <li> {{ Math.ceil(25 * numberOfPeople) }} gram mais</li>
                     <li> {{ Math.ceil((1/12) * numberOfPeople) }} paprika</li>
@@ -35,8 +35,8 @@
                     <li> {{ Math.ceil((1/15) * numberOfPeople) }} glass fetaost i olje </li>
                     <li> {{ Math.ceil((1/12) * numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
-                    <li> {{ setRes(Math.ceil((1/10) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
-                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
+                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/20) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
                     <li> {{ Math.ceil((1/25) * numberOfPeople) }} glass jalapenos </li>
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
                 </ul>
@@ -72,21 +72,21 @@
         methods: {
             flertallE(i) {
                 let out = '';
-                if (i > 1 || i === 0) {
+                if (Math.abs(i) !== 1) {
                     out = 'e';
                 }
                 return out;
             },
             flertallErE(i) {
                 let out = 'e';
-                if (i > 1 || i === 0) {
+                if (Math.abs(i) !== 1) {
                     out = 'er';
                 }
                 return out;
             },
             flertallEr(i) {
                 let out = '';
-                if (i > 1 || i === 0) {
+                if (Math.abs(i) !== 1) {
                     out = 'er';
                 }
                 return out;

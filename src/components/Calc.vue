@@ -12,6 +12,7 @@
                 </h4>
                 <ul>
                     <li> {{ setRes(Math.ceil(150*numberOfPeople/400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
+                    <li> {{ setRes(Math.ceil(150*numberOfPeople/400 * (2/3))) }} boks{{ flertallEr(res) }} bønner</li>
                     <li> {{ Math.ceil(2.5*numberOfPeople) }} STORE tacolefser</li>
                     <li> {{ setRes(Math.ceil(0.5*numberOfPeople)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
                     <li> {{ setRes(Math.ceil(0.25*numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
@@ -33,7 +34,9 @@
                 <ul>
                     <li> {{ Math.ceil((1/15)*numberOfPeople) }} glass fetaost i olje </li>
                     <li> {{ Math.ceil((1/12)*numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
-                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} pakk{{ flertallErE(res) }} cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/25)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
+                    <li> {{ setRes(Math.ceil((1/10)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
                     <li> {{ Math.ceil((1/25)*numberOfPeople) }} glass jalapenos </li>
                     <li> {{ setRes(Math.ceil((1/25)*numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
                 </ul>

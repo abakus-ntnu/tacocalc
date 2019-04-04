@@ -1,7 +1,7 @@
 <template>
     <div id="app" >
         <div class="page-header">
-            <h1>readmes tacokalkulator</h1>
+            <h1>readme sin tacokalkulator</h1>
         </div>
         <p class="lead center">
             For nye medlemmer, gamle drankere og andre som ønsker å kokkelere readmes fantastiske taco, men som er usikker på hvor mye de trenger av alt mulig.

@@ -11,49 +11,49 @@
                     }}
                 </h4>
                 <ul>
-                    <li> {{ setRes(Math.ceil(150*numberOfPeople/400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
-                    <li> {{ setRes(Math.ceil(150*numberOfPeople/400 * (2/3))) }} boks{{ flertallEr(res) }} bønner</li>
-                    <li> {{ Math.ceil(2.5*numberOfPeople) }} STORE tacolefser</li>
-                    <li> {{ setRes(Math.ceil(0.5*numberOfPeople)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
-                    <li> {{ setRes(Math.ceil(0.25*numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
-                    <li> {{ setRes(Math.ceil(0.4*numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
-                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
-                    <li> {{ setRes(Math.ceil((1/12)*numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
-                    <li> {{ Math.ceil(25*numberOfPeople) }} gram mais</li>
-                    <li> {{ Math.ceil((1/12)*numberOfPeople) }} paprika</li>
-                    <li> {{ setRes(Math.ceil((1/6) *numberOfPeople)) }} boks{{ flertallEr(res) }} rømme</li>
-                    <li> {{ Math.ceil((1/12)*numberOfPeople) }} rødløk</li>
-                    <li> {{ setRes(Math.ceil((1/8)*numberOfPeople)) }} stor{{ flertallE(res) }} pos{{ flertallErE(res) }} med tortillachips</li>
+                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
+                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400 * (2/3))) }} boks{{ flertallEr(res) }} bønner</li>
+                    <li> {{ Math.ceil(2.5 * numberOfPeople) }} STORE tacolefser</li>
+                    <li> {{ setRes(Math.ceil(0.5 * numberOfPeople)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
+                    <li> {{ setRes(Math.ceil(0.25 * numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
+                    <li> {{ setRes(Math.ceil(0.4 * numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
+                    <li> {{ Math.ceil(25 * numberOfPeople) }} gram mais</li>
+                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} paprika</li>
+                    <li> {{ setRes(Math.ceil((1/6) * numberOfPeople)) }} boks{{ flertallEr(res) }} rømme</li>
+                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} rødløk</li>
+                    <li> {{ setRes(Math.ceil((1/8) * numberOfPeople)) }} stor{{ flertallE(res) }} pos{{ flertallErE(res) }} med tortillachips</li>
                     <li> Også trenger du selvsagt ost, {{ numberOfPeople > 30 ? " men vi er usikre når dere er så mange. Minst en kilo i alle fall!"
                     : (numberOfPeople >= 15  ? " omkring 1 kilo bør holde." : " omkring en halv kilo er nok.") }} </li>
                 </ul>
                 <h5>Hvis du er i tvil om noe, er det alltid best å ta med ekstra.</h5>
 
                 <br>
-                <h5>Ellers er det nødvendig med ..</h5>
+                <h5>Ellers er det nødvendig med:</h5>
                 <ul>
-                    <li> {{ Math.ceil((1/15)*numberOfPeople) }} glass fetaost i olje </li>
-                    <li> {{ Math.ceil((1/12)*numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
-                    <li> {{ setRes(Math.ceil((1/25)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
-                    <li> {{ setRes(Math.ceil((1/10)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
-                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
-                    <li> {{ Math.ceil((1/25)*numberOfPeople) }} glass jalapenos </li>
-                    <li> {{ setRes(Math.ceil((1/25)*numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
+                    <li> {{ Math.ceil((1/15) * numberOfPeople) }} glass fetaost i olje </li>
+                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
+                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
+                    <li> {{ setRes(Math.ceil((1/10) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
+                    <li> {{ Math.ceil((1/25) * numberOfPeople) }} glass jalapenos </li>
+                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
                 </ul>
             </div>
         </div>
         <div class="col-md-6">
-            <h5>.. også trenger man guacamole</h5>
+            <h5>Også trenger man guacamole:</h5>
             <ul>
-                <li> {{ Math.ceil(numberOfPeople/4)*2 }} stk. modne avocado</li>
-                <li> {{ Math.ceil(numberOfPeople/4)*2 }} fedd hvitløk</li>
-                <li> {{ Math.ceil(numberOfPeople/4)*1 }} dl løk</li>
-                <li> {{ Math.ceil(numberOfPeople/4)*2 }} ss chili</li>
-                <li> {{ Math.ceil(numberOfPeople/4)*2 }} ss fersk koriander type hakket</li>
-                <li> {{ Math.ceil(numberOfPeople/4)*3 }} ss limesaft</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} stk. modne avocado</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} fedd hvitløk</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 1 }} dl løk</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss chili</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss fersk koriander type hakket</li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 3 }} ss limesaft</li>
                 <li> {{ Math.ceil(numberOfPeople/4) }} ts salt </li>
                 <li> {{ Math.ceil(numberOfPeople/4) }} ts pepper </li>
-                <li> {{ Math.ceil(numberOfPeople/4)*2 }} ss rømme </li>
+                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss rømme </li>
             </ul>
         </div>
     </div>

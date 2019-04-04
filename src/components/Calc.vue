@@ -35,8 +35,8 @@
                     <li> {{ Math.ceil((1/15) * numberOfPeople) }} glass fetaost i olje </li>
                     <li> {{ Math.ceil((1/12) * numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
-                    <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
-                    <li> {{ setRes(Math.ceil((1/20) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
+                    <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
                     <li> {{ Math.ceil((1/25) * numberOfPeople) }} glass jalapenos </li>
                     <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
                 </ul>

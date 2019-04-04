@@ -14,9 +14,9 @@
                     <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
                     <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400 * (2/3))) }} boks{{ flertallEr(res) }} bønner</li>
                     <li> {{ Math.ceil(2.5 * numberOfPeople) }} STORE tacolefser</li>
-                    <li> {{ setRes(Math.ceil(0.5 * numberOfPeople)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
-                    <li> {{ setRes(Math.ceil(0.25 * numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
-                    <li> {{ setRes(Math.ceil(0.4 * numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
+                    <li> {{ setRes(Math.ceil((1/4) * numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
+                    <li> {{ setRes(Math.ceil((2/5) * numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
                     <li> {{ setRes(Math.ceil((1/15) * numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
                     <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
                     <li> {{ Math.ceil(25 * numberOfPeople) }} gram mais</li>

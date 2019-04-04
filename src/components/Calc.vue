@@ -11,18 +11,18 @@
                     }}
                 </h4>
                 <ul>
-                    <li> {{ Math.ceil(150*numberOfPeople/400) }} pakker kjøttdeig (á 400 gram)</li>
+                    <li> {{ setRes(Math.ceil(150*numberOfPeople/400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
                     <li> {{ Math.ceil(2.5*numberOfPeople) }} STORE tacolefser</li>
-                    <li> {{ Math.ceil(0.5*numberOfPeople) }} pakker tacokrydder</li>
-                    <li> {{ Math.ceil(0.25*numberOfPeople) }} pakker bacon</li>
-                    <li> {{ Math.ceil(0.4*numberOfPeople) }} tomater</li>
-                    <li> {{ Math.ceil((1/15)*numberOfPeople) }} agurker</li>
-                    <li> {{ Math.ceil((1/12)*numberOfPeople) }} pakker isbergsalat</li>
+                    <li> {{ setRes(Math.ceil(0.5*numberOfPeople)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
+                    <li> {{ setRes(Math.ceil(0.25*numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
+                    <li> {{ setRes(Math.ceil(0.4*numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
+                    <li> {{ setRes(Math.ceil((1/12)*numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
                     <li> {{ Math.ceil(25*numberOfPeople) }} gram mais</li>
                     <li> {{ Math.ceil((1/12)*numberOfPeople) }} paprika</li>
-                    <li> {{ Math.ceil((1/6) *numberOfPeople) }} bokser rømme</li>
+                    <li> {{ setRes(Math.ceil((1/6) *numberOfPeople)) }} boks{{ flertallEr(res) }} rømme</li>
                     <li> {{ Math.ceil((1/12)*numberOfPeople) }} rødløk</li>
-                    <li> {{ Math.ceil((1/8)*numberOfPeople) }} store poser med tortillachips</li>
+                    <li> {{ setRes(Math.ceil((1/8)*numberOfPeople)) }} stor{{ flertallE(res) }} pos{{ flertallErE(res) }} med tortillachips</li>
                     <li> Også trenger du selvsagt ost, {{ numberOfPeople > 30 ? " men vi er usikre når dere er så mange. Minst en kilo i alle fall!"
                     : (numberOfPeople >= 15  ? " omkring 1 kilo bør holde." : " omkring en halv kilo er nok.") }} </li>
                 </ul>
@@ -33,9 +33,9 @@
                 <ul>
                     <li> {{ Math.ceil((1/15)*numberOfPeople) }} glass fetaost i olje </li>
                     <li> {{ Math.ceil((1/12)*numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
-                    <li> {{ Math.ceil((1/15)*numberOfPeople) }} pakker cashewnøtter </li>
+                    <li> {{ setRes(Math.ceil((1/15)*numberOfPeople)) }} pakk{{ flertallErE(res) }} cashewnøtter </li>
                     <li> {{ Math.ceil((1/25)*numberOfPeople) }} glass jalapenos </li>
-                    <li> {{ Math.ceil((1/25)*numberOfPeople) }} bokser med ananas </li>
+                    <li> {{ setRes(Math.ceil((1/25)*numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
                 </ul>
             </div>
         </div>
@@ -62,7 +62,36 @@
         data() {
             return {
                 numberOfPeople: 80085,
+                res: 0,
             };
+        },
+
+        methods: {
+            flertallE(i) {
+                let out = '';
+                if (i > 1 || i === 0) {
+                    out = 'e';
+                }
+                return out;
+            },
+            flertallErE(i) {
+                let out = 'e';
+                if (i > 1 || i === 0) {
+                    out = 'er';
+                }
+                return out;
+            },
+            flertallEr(i) {
+                let out = '';
+                if (i > 1 || i === 0) {
+                    out = 'er';
+                }
+                return out;
+            },
+            setRes(i) {
+                this.res = i;
+                return i;
+            },
         },
     };
 </script>

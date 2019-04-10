@@ -6,7 +6,7 @@
                 <input type="number" min="1" v-model="numberOfPeople"/>
                 <h4>
                     {{
-                        numberOfPeople < 0 ? 'Hva er det du tror du gjør? Slutt å være så negativ.' :
+                        numberOfPeople &lt; 0 ? 'Hva er det du tror du gjør? Slutt å være så negativ.' :
                         (!numberOfPeople ? 'Du har ikke oppgitt noe antall ennå.' : '')
                     }}
                 </h4>

@@ -10,7 +10,7 @@
 
         <div id="footer">
             <p>Made by <a href="http://svorstol.com">Stein-Otto Svorstøl</a></p>
-            <p>Updated by <a href="https://github.com/AndreasHaaversen">Andreas Hammer Håversen</a></p>
+            <p>Maintained by <a href="https://github.com/orgs/readme-ntnu/">readme</a></p>
         </div>
     </div>
 </template>

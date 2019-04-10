@@ -11,19 +11,19 @@
                     }}
                 </h4>
                 <ul>
-                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} kjøttdeig (á 400 gram)</li>
-                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400 * (2/3))) }} boks{{ flertallEr(res) }} bønner</li>
-                    <li> {{ Math.ceil(2.5 * numberOfPeople) }} STORE tacolefser</li>
-                    <li> {{ setRes(Math.ceil(150 * numberOfPeople / 400)) }} pakk{{ flertallErE(res) }} tacokrydder</li>
-                    <li> {{ setRes(Math.ceil((1/4) * numberOfPeople)) }} pakk{{ flertallErE(res) }} bacon</li>
-                    <li> {{ setRes(Math.ceil((2/5) * numberOfPeople)) }} tomat{{ flertallEr(res) }}</li>
-                    <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} agurk{{ flertallEr(res) }}</li>
-                    <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} isbergsalat</li>
-                    <li> {{ Math.ceil(25 * numberOfPeople) }} gram mais</li>
-                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} paprika</li>
-                    <li> {{ setRes(Math.ceil((1/6) * numberOfPeople)) }} boks{{ flertallEr(res) }} rømme</li>
-                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} rødløk</li>
-                    <li> {{ setRes(Math.ceil((1/8) * numberOfPeople)) }} stor{{ flertallE(res) }} pos{{ flertallErE(res) }} med tortillachips</li>
+                    <li> {{ kjøttdeig }} pakk{{ flertallErE(kjøttdeig) }} kjøttdeig (á 400 gram)</li>
+                    <li> {{ bønner }} boks{{ flertallEr(bønner) }} bønner</li>
+                    <li> {{ tacolefser }} STORE tacolefser</li>
+                    <li> {{ tacokrydder }} pakk{{ flertallErE(tacokrydder) }} tacokrydder</li>
+                    <li> {{ bacon }} pakk{{ flertallErE(bacon) }} bacon</li>
+                    <li> {{ tomat }} tomat{{ flertallEr(tomat) }}</li>
+                    <li> {{ agurk }} agurk{{ flertallEr(agurk) }}</li>
+                    <li> {{ isbergsalat }} pakk{{ flertallErE(isbergsalat) }} isbergsalat</li>
+                    <li> {{ mais }} gram mais</li>
+                    <li> {{ paprika }} paprika</li>
+                    <li> {{ rømme }} boks{{ flertallEr(rømme) }} rømme</li>
+                    <li> {{ rødløk }} rødløk</li>
+                    <li> {{ tortillachips }} stor{{ flertallE(tortillachips) }} pos{{ flertallErE(tortillachips) }} med tortillachips</li>
                     <li> Også trenger du selvsagt ost, {{ numberOfPeople > 30 ? " men vi er usikre når dere er så mange. Minst en kilo i alle fall!"
                     : (numberOfPeople >= 15  ? " omkring 1 kilo bør holde." : " omkring en halv kilo er nok.") }} </li>
                 </ul>
@@ -32,13 +32,13 @@
                 <br>
                 <h5>Ellers er det nødvendig med:</h5>
                 <ul>
-                    <li> {{ Math.ceil((1/15) * numberOfPeople) }} glass fetaost i olje </li>
-                    <li> {{ Math.ceil((1/12) * numberOfPeople) }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
-                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med sprøstekt løk </li>
-                    <li> {{ setRes(Math.ceil((1/12) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med cashewnøtter </li>
-                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} pakk{{ flertallErE(res) }} med druer </li>
-                    <li> {{ Math.ceil((1/25) * numberOfPeople) }} glass jalapenos </li>
-                    <li> {{ setRes(Math.ceil((1/25) * numberOfPeople)) }} boks{{ flertallEr(res) }} med ananas </li>
+                    <li> {{ fetaost }} glass fetaost i olje </li>
+                    <li> {{ chunkySalsa }} glass chunky salsa (hot ofc og litt medium for de som liker det)</li>
+                    <li> {{ sprøstektLøk }} pakk{{ flertallErE(sprøstektLøk) }} med sprøstekt løk </li>
+                    <li> {{ cashewnøtter }} pakk{{ flertallErE(cashewnøtter) }} med cashewnøtter </li>
+                    <li> {{ druer }} pakk{{ flertallErE(druer) }} med druer </li>
+                    <li> {{ jalapenos }} glass jalapenos </li>
+                    <li> {{ ananas }} boks{{ flertallEr(ananas) }} med ananas </li>
                     <li> 1 stk. hemmelig ingrediens 😉</li>
                 </ul>
             </div>
@@ -46,15 +46,15 @@
         <div class="col-md-6">
             <h5>Også trenger man guacamole:</h5>
             <ul>
-                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} stk. modne avocado</li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} fedd hvitløk</li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 1 }} dl løk</li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss chili</li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss fersk koriander type hakket</li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 3 }} ss limesaft</li>
-                <li> {{ Math.ceil(numberOfPeople/4) }} ts salt </li>
-                <li> {{ Math.ceil(numberOfPeople/4) }} ts pepper </li>
-                <li> {{ Math.ceil(numberOfPeople/4) * 2 }} ss rømme </li>
+                <li> {{ avocado }} stk. modne avocado</li>
+                <li> {{ hvitløk }} fedd hvitløk</li>
+                <li> {{ aLøk }} dl løk</li>
+                <li> {{ chili }} ss chili</li>
+                <li> {{ koriander }} ss fersk koriander type hakket</li>
+                <li> {{ limesaft }} ss limesaft</li>
+                <li> {{ salt }} ts salt </li>
+                <li> {{ pepper }} ts pepper </li>
+                <li> {{ aRømme }} ss rømme </li>
             </ul>
         </div>
     </div>
@@ -92,10 +92,96 @@
                 }
                 return out;
             },
-            setRes(i) {
-                this.res = i;
-                return i;
-            },
         },
+
+        computed: {
+            kjøttdeig: function() {
+                return Math.ceil(150 * this.numberOfPeople / 400);
+            },
+            bønner: function() {
+                return Math.ceil(150 * this.numberOfPeople / 400 * (2/3));
+            },
+            tacolefser: function() {
+                return Math.ceil(2.5 * this.numberOfPeople);
+            },
+            tacokrydder: function() {
+                return Math.ceil(150 * this.numberOfPeople / 400);
+            },
+            bacon: function() {
+                return Math.ceil((1/4) * this.numberOfPeople);
+            },
+            tomat: function() {
+                return Math.ceil((2/5) * this.numberOfPeople);
+            },
+            agurk: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            isbergsalat: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            mais: function() {
+                return Math.ceil(25 * this.numberOfPeople);
+            },
+            paprika: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            rømme: function() {
+                return Math.ceil((1/6) * this.numberOfPeople);
+            },
+            rødløk: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            tortillachips: function() {
+                return Math.ceil((1/8) * this.numberOfPeople);
+            },
+            fetaost: function() {
+                return Math.ceil((1/15) * this.numberOfPeople);
+            },
+            chunkySalsa: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            sprøstektLøk: function() {
+                return Math.ceil((1/25) * this.numberOfPeople);
+            },
+            cashewnøtter: function() {
+                return Math.ceil((1/12) * this.numberOfPeople);
+            },
+            druer: function() {
+                return Math.ceil((1/25) * this.numberOfPeople);
+            },
+            jalapenos: function() {
+                return Math.ceil((1/25) * this.numberOfPeople);
+            },
+            ananas: function() {
+                return Math.ceil((1/25) * this.numberOfPeople);
+            },
+            avocado: function() {
+                return Math.ceil(this.numberOfPeople/4) * 2;
+            },
+            hvitløk: function() {
+                return Math.ceil(this.numberOfPeople/4) * 2;
+            },
+            aLøk: function() {
+                return Math.ceil(this.numberOfPeople/4) * 1;
+            },
+            chili: function() {
+                return Math.ceil(this.numberOfPeople/4) * 2;
+            },
+            koriander: function() {
+                return Math.ceil(this.numberOfPeople/4) * 2;
+            },
+            limesaft: function() {
+                return Math.ceil(this.numberOfPeople/4) * 3;
+            },
+            salt: function() {
+                return Math.ceil(this.numberOfPeople/4);
+            },
+            pepper: function() {
+                return Math.ceil(this.numberOfPeople/4);
+            },
+            aRømme: function() {
+                return Math.ceil(this.numberOfPeople/4) * 2;
+            },
+        }
     };
 </script>

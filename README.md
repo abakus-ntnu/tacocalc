@@ -1,18 +1,25 @@
 # tacocalc
-> Taco Calculator made with Vue because I wanted to try it out.
 
-## Setup, build and deploy
+> Taco Calculator calculates what you need for your taco.
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:3000
-npm run start:dev
-
-# build for production with minification
-npm run build
-
-# deploy to production (requires necessary keys or password)
-npm run deploy
+## Project setup
 ```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+Built and deployed to DigitalOcean automatically on push to `master`.

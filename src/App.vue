@@ -6,7 +6,7 @@
     <p
       class="lead center"
     >For nye medlemmer, gamle drankere og andre som ønsker å kokkelere readmes fantastiske taco, men som er usikker på hvor mye de trenger av alt mulig.</p>
-    <Calc/>
+    <TacoCalc />
 
     <div id="footer">
       <p>
@@ -21,43 +21,41 @@
   </div>
 </template>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-#footer {
-  text-align: center;
-  font-size: 10px;
-  color: grey;
-  position: relative;
-  bottom: -50px;
-}
-
-.aligncenter {
-  float: center;
-  text-align: center;
-}
-
-.alignright {
-  float: right;
-}
-</style>
-
 <script>
-import "jquery";
-import "bootstrap";
+import TacoCalc from './components/TacoCalc.vue'
 
-import Calc from "./components/Calc";
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    Calc
+    TacoCalc
   }
-};
+}
 </script>
+
+<style>
+  #app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  #footer {
+    text-align: center;
+    font-size: 10px;
+    color: grey;
+    position: relative;
+    bottom: -50px;
+  }
+
+  .aligncenter {
+    float: center;
+    text-align: center;
+  }
+
+  .alignright {
+    float: right;
+  }
+</style>
